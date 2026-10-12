@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "name": "Embertrail",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "distribution": "native-windows-x64-installer",
   "wasm": false,
   "source_repository": "https://github.com/kevstermcgee/BlueEngine",
-  "source_revision": "056a1586d52c19c233455ce5ed75e28b4cfed3c1",
-  "build_run": "https://github.com/kevstermcgee/Embertrail/actions/runs/38204875154",
-  "build_commit": "75b5e96ff334dcce0b48ecc6d047d3ca8d72c11f",
+  "source_revision": "5112f540ecc283eff951c5ecfd6b9a625a3ca7a0",
+  "build_run": "https://github.com/kevstermcgee/Embertrail/actions/runs/38255740870",
+  "build_commit": "b8fdf039c2171bea8da943db65b671e6e4b5c5f5",
   "installer_file": "embertrail-setup-windows-x64.exe",
-  "installer_bytes": 3296822,
-  "installer_sha256": "8fc424e16db355bedf75510669ca400c3082cf078fc4325fa43f43f1b42ad255",
-  "native_exe_sha256": "1d93b24de1af67e3844a1f90662cd0bc51e2446855e8a32907ec68d8e2782cca",
+  "installer_bytes": 3291654,
+  "installer_sha256": "5f3288447c2efd3528e87831cba327222c15ad9a0172b7b05580b5b4ee8453d4",
+  "native_exe_sha256": "020d366cb21ef92f845ee592689a5945cab4f729fb957314e371de0e3699b725",
   "runtime_files": {
     "assets/audio/trail/bank.json": "c1d172a6384d6fbfb0b9bf491cc5bd81dae52513a6327be4076aecda8317b178",
     "assets/audio/trail/music-bass.wav": "4fed85735e16e6fba712e813c04d8d1d8a9b2f0b5946dc4a3fa44eb587ac40aa",
     "assets/audio/trail/music-glimmer.wav": "79b76cb5c8b00d280f918329526be3938746a361633bdd62089d439dcd58927d",
     "assets/audio/trail/music-melody.wav": "62c5d2fc110a1cc567b796c917f0015eea17c6daa4a788694cf5745714efe535",
-    "embertrail.exe": "1d93b24de1af67e3844a1f90662cd0bc51e2446855e8a32907ec68d8e2782cca",
+    "embertrail.exe": "020d366cb21ef92f845ee592689a5945cab4f729fb957314e371de0e3699b725",
     "embertrail.ico": "6fced86ae69cadd812d0c0763f6c656c00982991b1a19929be599c05e9cbc1bf",
     "embertrail.png": "d30e5e1de8e5dd153374f148e3958911960291462f83672ddc1f50eaa2802a07"
   },
@@ -28,12 +28,19 @@
     "native_x64_gui": true,
     "c_runtime_linked_into_game": true,
     "installation_upgrade_uninstall_and_save_retention": true,
-    "capture_visually_inspected": true
+    "capture_visually_inspected": true,
+    "compact_hud_visually_inspected": true
   },
   "browser_distribution": {
     "status": "retired",
     "github_pages_disabled": true,
     "old_url_returns": 404
   },
-  "build_status": "success"
+  "build_status": "success",
+  "hud": {
+    "persistent_overlay_area_reduction_approx_percent": 80,
+    "controls_hidden_during_play": true,
+    "atlas_clicks_and_pause_exercised_on_native_linux": true,
+    "windows_capture_sha256": "be272fd6c82e9bd9f13952fe8e3275343edd772a794d56f8aaeec944516fb859"
+  }
 }
