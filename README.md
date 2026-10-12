@@ -10,4 +10,4 @@ Move with arrows or WASD, jump with Space or Up, and run with Shift. Hold Up for
 
 [Game source and development guide](https://github.com/kevstermcgee/BlueEngine/tree/game/embertrail/games/embertrail). All characters, artwork, music and levels are original.
 
-The Windows workflow retrieves pinned public source, runs rule tests and code checks, validates the score, checks executable resources and shortcut/window icons, launches the native game, captures an isolated declared-file package, and tests installation, upgrade and save-preserving uninstall. The browser deployment has been retired. Releases contain only the verified Windows installer and its SHA256 checksum.
+The Windows workflow retrieves pinned public source, runs rule tests and code checks, validates the score, checks executable resources and shortcut/window icons, launches the native game, captures an isolated declared-file package, and tests installation, upgrade and save-preserving uninstall. The browser deployment has been retired. Each release contains the verified Windows installer and records its SHA256 checksum.
