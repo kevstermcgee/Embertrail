@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: kevstermcgee/BlueEngine
-          ref: abe2ffdaade16495aead14befb4d0a14eaf7b85c
+          ref: 056a1586d52c19c233455ce5ed75e28b4cfed3c1
           path: engine
       - uses: dtolnay/rust-toolchain@stable
         with:
@@ -71,10 +71,30 @@ jobs:
         shell: pwsh
         run: |
           $folder = Join-Path $env:RUNNER_TEMP 'Embertrail-shortcuts'
-          python games/embertrail/scripts/check.py --content-only --ship-folder $folder
+          python games/embertrail/scripts/check.py --ship-folder $folder
           if ($LASTEXITCODE -ne 0) { throw 'Game content check failed' }
           python scripts/publish_games.py check
           if ($LASTEXITCODE -ne 0) { throw 'Published-source check failed' }
+      - name: Verify native executable and self-contained C runtime
+        working-directory: engine
+        shell: python
+        run: |
+          import hashlib, json, struct
+          from pathlib import Path
+          root = Path('games/embertrail/dist')
+          stamp = json.loads((root / 'ship.json').read_text())
+          assert stamp['verified']['launch'] and stamp['verified']['smoke']
+          for name, digest in stamp['file_sha256'].items():
+              assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest, name
+          assert not list(root.rglob('*.wasm'))
+          data = (root / 'embertrail.exe').read_bytes()
+          offset = struct.unpack_from('<I', data, 0x3c)[0]
+          assert data[offset:offset+4] == b'PE\0\0'
+          assert struct.unpack_from('<H', data, offset + 4)[0] == 0x8664
+          assert struct.unpack_from('<H', data, offset + 24 + 68)[0] == 2
+          assert b'VCRUNTIME140' not in data.upper(), 'Game requires a separate Visual C++ runtime'
+          assert b'MSVCP140' not in data.upper(), 'Game requires a separate Visual C++ runtime'
+          print('Verified native x64 GUI executable, declared files, graphical evidence and embedded C runtime.')
       - name: Build per-user Windows x64 installer
         working-directory: engine
         shell: pwsh
