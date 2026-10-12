@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "games": [
+    {
+      "id": "embertrail",
+      "title": "Embertrail",
+      "description": "Mote the lantern spirit rekindles dawn across 32 authored courses in eight worlds. Run, jump, find secrets and outwit the Hollow Keepers.",
+      "engine_revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+      "game_revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+      "presentation": "2d",
+      "networking": "offline",
+      "input": [
+        "keyboard",
+        "mouse",
+        "controller"
+      ],
+      "targets": [
+        "web",
+        "linux"
+      ],
+      "built_at_epoch": 1791775228,
+      "compatibility": {
+        "loader_sha256": "99a6b756e7eb2851e47bdf8d0cbc16a85c0acc14d9ecf9f740f5e1b2a9614261",
+        "macroquad": "0.4.14",
+        "miniquad": "0.4.8",
+        "quad-snd": "0.2.8",
+        "save_frame": 1,
+        "storage": "localStorage per origin + game ID; 4 MiB limit; Snapshot version/migrations",
+        "webgl": "WebGL 1"
+      },
+      "package_id": "15e48df5eb17ff5adb6ff12d3f84e5775ea1ab60c176785989331addbd9be5d2",
+      "sources": {
+        "engine": {
+          "clean": true,
+          "dirty_paths": [],
+          "path": ".",
+          "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+          "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713"
+        },
+        "game": {
+          "clean": true,
+          "dirty_paths": [],
+          "path": "games/embertrail",
+          "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+          "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713"
+        }
+      },
+      "browser_verification": {
+        "compiled": true,
+        "desktop": {
+          "audio_initialized": true,
+          "controller": true,
+          "focus_loss": true,
+          "focus_return": true,
+          "gameplay_scenario": true,
+          "input": true,
+          "offline_reload": true,
+          "playable": true,
+          "reload_read": true,
+          "save_write": true,
+          "update_recovery": true,
+          "wasm_instantiated": true
+        },
+        "environment": "Chromium CDP/software WebGL; emulated touch and synthetic controller",
+        "mobile": {
+          "audio_initialized": true,
+          "focus_loss": true,
+          "focus_return": true,
+          "gameplay_scenario": true,
+          "input": true,
+          "offline_reload": true,
+          "playable": true,
+          "reload_read": true,
+          "save_write": true,
+          "update_recovery": true,
+          "wasm_instantiated": true
+        },
+        "package_valid": true,
+        "physical_device_tested": false
+      },
+      "required_capabilities": [
+        "WebAssembly",
+        "WebGL 1",
+        "Web Audio",
+        "localStorage",
+        "HTTPS or localhost for service worker"
+      ],
+      "play": "embertrail/index.html",
+      "thumbnail": "embertrail/thumbnail.png",
+      "native_download": null
+    }
+  ]
+}

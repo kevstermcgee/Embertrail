@@ -24,7 +24,7 @@ jobs:
           python3 - <<'PY'
           import hashlib, json
           from pathlib import Path
-          root = Path('public')
+          root = Path('public/embertrail')
           manifest = json.loads((root / 'manifest.json').read_text())
           assert manifest['id'] == 'embertrail'
           assert all(manifest['reproducibility'][key] for key in ('clean_checkout', 'empty_target', 'package_hashes_match'))
