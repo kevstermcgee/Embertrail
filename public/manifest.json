@@ -1,0 +1,383 @@
+{
+  "browser_verification": {
+    "compiled": true,
+    "desktop": {
+      "audio_initialized": true,
+      "controller": true,
+      "focus_loss": true,
+      "focus_return": true,
+      "gameplay_scenario": true,
+      "input": true,
+      "offline_reload": true,
+      "playable": true,
+      "reload_read": true,
+      "save_write": true,
+      "update_recovery": true,
+      "wasm_instantiated": true
+    },
+    "environment": "Chromium CDP/software WebGL; emulated touch and synthetic controller",
+    "mobile": {
+      "audio_initialized": true,
+      "focus_loss": true,
+      "focus_return": true,
+      "gameplay_scenario": true,
+      "input": true,
+      "offline_reload": true,
+      "playable": true,
+      "reload_read": true,
+      "save_write": true,
+      "update_recovery": true,
+      "wasm_instantiated": true
+    },
+    "package_valid": true,
+    "physical_device_tested": false
+  },
+  "built_at_epoch": 1791775228,
+  "compatibility": {
+    "loader_sha256": "99a6b756e7eb2851e47bdf8d0cbc16a85c0acc14d9ecf9f740f5e1b2a9614261",
+    "macroquad": "0.4.14",
+    "miniquad": "0.4.8",
+    "quad-snd": "0.2.8",
+    "save_frame": 1,
+    "storage": "localStorage per origin + game ID; 4 MiB limit; Snapshot version/migrations",
+    "webgl": "WebGL 1"
+  },
+  "controls": {
+    "commands": {
+      "fullscreen": {
+        "bit": 0,
+        "buttons": [],
+        "key": "KeyF",
+        "label": "Fullscreen"
+      },
+      "load": {
+        "bit": 32,
+        "buttons": [],
+        "key": "KeyL",
+        "label": "Load",
+        "touch": "load"
+      },
+      "music": {
+        "bit": 64,
+        "buttons": [],
+        "key": "KeyN",
+        "label": "Music",
+        "touch": "music"
+      },
+      "pause": {
+        "bit": 2,
+        "buttons": [
+          1
+        ],
+        "key": "Escape",
+        "label": "Pause/resume",
+        "touch": "pause"
+      },
+      "restart": {
+        "bit": 4,
+        "buttons": [],
+        "key": "KeyR",
+        "label": "Restart",
+        "touch": "restart"
+      },
+      "save": {
+        "bit": 16,
+        "buttons": [],
+        "key": "KeyK",
+        "label": "Save",
+        "touch": "save"
+      },
+      "sound": {
+        "bit": 8,
+        "buttons": [],
+        "key": "KeyM",
+        "label": "Sound",
+        "touch": "sound"
+      },
+      "start": {
+        "bit": 1,
+        "buttons": [
+          9
+        ],
+        "key": "Enter",
+        "label": "Play",
+        "touch": "play"
+      }
+    },
+    "look": {
+      "axes": [
+        2,
+        3
+      ],
+      "mouse": "canvas drag"
+    },
+    "movement": {
+      "axes": [
+        0,
+        1
+      ],
+      "directions": {
+        "ArrowDown": [
+          0,
+          1
+        ],
+        "ArrowLeft": [
+          -1,
+          0
+        ],
+        "ArrowRight": [
+          1,
+          0
+        ],
+        "ArrowUp": [
+          0,
+          -1
+        ],
+        "KeyA": [
+          -1,
+          0
+        ],
+        "KeyD": [
+          1,
+          0
+        ],
+        "KeyS": [
+          0,
+          1
+        ],
+        "KeyW": [
+          0,
+          -1
+        ]
+      },
+      "keys": [
+        "KeyW",
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "ArrowUp",
+        "ArrowLeft",
+        "ArrowDown",
+        "ArrowRight"
+      ],
+      "touch": "project mobile_controls"
+    },
+    "primary": {
+      "button": 0,
+      "key": "Space",
+      "touch": "action"
+    },
+    "sprint": {
+      "keys": [
+        "ShiftLeft",
+        "ShiftRight"
+      ]
+    },
+    "version": 1
+  },
+  "description": "Mote the lantern spirit rekindles dawn across 32 authored courses in eight worlds. Run, jump, find secrets and outwit the Hollow Keepers.",
+  "engine_revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+  "file_sha256": {
+    "app.webmanifest": "a4d4175a48cbf14ef2fc439d526da6be363618ae59ad3e1429ad521774dc0d9b",
+    "assets/audio/trail/bank.json": "c1d172a6384d6fbfb0b9bf491cc5bd81dae52513a6327be4076aecda8317b178",
+    "assets/audio/trail/music-bass.wav": "4fed85735e16e6fba712e813c04d8d1d8a9b2f0b5946dc4a3fa44eb587ac40aa",
+    "assets/audio/trail/music-glimmer.wav": "79b76cb5c8b00d280f918329526be3938746a361633bdd62089d439dcd58927d",
+    "assets/audio/trail/music-melody.wav": "62c5d2fc110a1cc567b796c917f0015eea17c6daa4a788694cf5745714efe535",
+    "build.json": "0d27a2952ed81ad4c2aafa2acebef0dae4817d9a6318c88818d8333e98fbfdcb",
+    "game.wasm": "8ead6a445ff0c671869ed15127b85dc40a119cad8acb9657680c887a36de9c76",
+    "index.html": "8e5848737a200dac8384a2155fe58ba6ec324bebbfbd0202044aa21a6be7e894",
+    "loader.js": "99a6b756e7eb2851e47bdf8d0cbc16a85c0acc14d9ecf9f740f5e1b2a9614261",
+    "mobile.js": "6085597c317f1aea7ece3ca2947b1e03f4be4a8d2ade652b1929bd8b6d1248ae",
+    "platform.js": "a98569b537a863ed1f5d6b12a3b1b3580a4ab11654c91add17462b63f7539ed4",
+    "service-worker.js": "8c708020cfba15bd1d223cd5ec26e3f8f1189c8ec6e36c59375b35483ff9b723",
+    "thumbnail.png": "d30e5e1de8e5dd153374f148e3958911960291462f83672ddc1f50eaa2802a07"
+  },
+  "game_revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+  "game_source_sha256": "807a9bfceacf60620d174496ccd759d23c3d713e06eef08e50f77b770730a1c3",
+  "id": "embertrail",
+  "input": [
+    "keyboard",
+    "mouse",
+    "controller"
+  ],
+  "install": {
+    "offline": true,
+    "web": "app.webmanifest"
+  },
+  "measurements": {
+    "desktop": {
+      "environment": "Headless Chromium SwiftShader on this Linux host; latency includes CDP/report polling",
+      "fps": 46.7588718809654,
+      "frame_max_ms": 50.09999999999991,
+      "frame_p50_ms": 16.699999999999818,
+      "frame_p95_ms": 33.40000000000009,
+      "frames": 95,
+      "game_performance": {
+        "chunk_render_frames": 0,
+        "chunk_render_max_ms": 0,
+        "chunk_render_stalls_over_50ms": 0,
+        "chunk_stalls_over_50ms": 0,
+        "chunk_update_max_ms": 0,
+        "chunk_updates": 0,
+        "draw_max_ms": 6.299999952316284,
+        "step_max_ms": 0.10000002384185791
+      },
+      "hardware_coverage": [],
+      "js_heap_bytes": 2435850,
+      "load_ms": 733.1281970000055,
+      "navigation_to_ready_roundtrip_ms": 28951.49861,
+      "replay_work": {
+        "chunk_render_frames": 0,
+        "chunk_render_max_ms": 0,
+        "chunk_render_stalls_over_50ms": 0,
+        "chunk_stalls_over_50ms": 0,
+        "chunk_update_max_ms": 0,
+        "chunk_updates": 0,
+        "draw_max_ms": 11.199999988079071,
+        "step_max_ms": 1
+      },
+      "sample_ms": 2031.699999988079,
+      "save_ms": 319.96166000000085,
+      "startup_ms": 26555.80000001192,
+      "time_to_playable_ms": 28899.399999976158,
+      "wasm_instantiation_ms": 0.40000003576278687,
+      "wasm_memory_bytes": 21233664
+    },
+    "physical_devices": [],
+    "touch_emulation": {
+      "environment": "Headless Chromium SwiftShader on this Linux host; latency includes CDP/report polling",
+      "fps": 45.846414511931556,
+      "frame_max_ms": 50,
+      "frame_p50_ms": 16.699999999999818,
+      "frame_p95_ms": 33.399999999999636,
+      "frames": 92,
+      "game_performance": {
+        "chunk_render_frames": 0,
+        "chunk_render_max_ms": 0,
+        "chunk_render_stalls_over_50ms": 0,
+        "chunk_stalls_over_50ms": 0,
+        "chunk_update_max_ms": 0,
+        "chunk_updates": 0,
+        "draw_max_ms": 4.100000023841858,
+        "step_max_ms": 0.10000002384185791
+      },
+      "hardware_coverage": [],
+      "js_heap_bytes": 7463056,
+      "load_ms": 720.0880600000019,
+      "navigation_to_ready_roundtrip_ms": 29675.577535,
+      "replay_work": {
+        "chunk_render_frames": 0,
+        "chunk_render_max_ms": 0,
+        "chunk_render_stalls_over_50ms": 0,
+        "chunk_stalls_over_50ms": 0,
+        "chunk_update_max_ms": 0,
+        "chunk_updates": 0,
+        "draw_max_ms": 7.199999988079071,
+        "step_max_ms": 2.100000023841858
+      },
+      "sample_ms": 2006.6999999761583,
+      "save_ms": 678.497328999998,
+      "startup_ms": 27611.5,
+      "time_to_playable_ms": 29594.30000001192,
+      "wasm_instantiation_ms": 0.5,
+      "wasm_memory_bytes": 21233664
+    }
+  },
+  "mobile_controls": {
+    "action_label": "Jump",
+    "layout": "dpad"
+  },
+  "native_download": null,
+  "networking": "offline",
+  "package_id": "15e48df5eb17ff5adb6ff12d3f84e5775ea1ab60c176785989331addbd9be5d2",
+  "play": "index.html",
+  "presentation": "2d",
+  "reproduce": {
+    "cargo": "cargo 1.98.1 (797e8a9bc 2026-08-05)",
+    "command": [
+      "python3",
+      "tools/be2.py",
+      "web",
+      "build",
+      "games/embertrail"
+    ],
+    "compiler_namespace": "canonical package roots, version, features and codegen settings v1",
+    "dependency_policy": "committed Cargo.lock; cargo fetch --locked, then offline locked builds",
+    "engine_relative_to_game": "../..",
+    "game_lock_sha256": "2b9f489b438ad6d364501c7ff27a4d554719d60812f5326052558fec3dc98506",
+    "path_remapping": "Cargo home=/cargo, engine=/blueengine, game=/game",
+    "prepare": [
+      "python3",
+      "tools/be2.py",
+      "web",
+      "prepare",
+      "games/embertrail"
+    ],
+    "profile": "release",
+    "runtime_wasm_removed_custom_sections": [
+      "name"
+    ],
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "source_date_epoch": 1791775228,
+    "target": "wasm32-unknown-unknown"
+  },
+  "reproducibility": {
+    "clean_checkout": true,
+    "compared_fields": [
+      "package_id",
+      "engine_revision",
+      "game_revision",
+      "game_source_sha256",
+      "sources",
+      "verification",
+      "file_sha256",
+      "compatibility",
+      "controls",
+      "required_capabilities",
+      "built_at_epoch",
+      "reproduce",
+      "browser_verification"
+    ],
+    "empty_target": true,
+    "package_hashes_match": true
+  },
+  "required_capabilities": [
+    "WebAssembly",
+    "WebGL 1",
+    "Web Audio",
+    "localStorage",
+    "HTTPS or localhost for service worker"
+  ],
+  "runtime": "portable",
+  "runtime_abi": 2,
+  "schema_version": 1,
+  "sources": {
+    "engine": {
+      "clean": true,
+      "dirty_paths": [],
+      "path": ".",
+      "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+      "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713"
+    },
+    "game": {
+      "clean": true,
+      "dirty_paths": [],
+      "path": "games/embertrail",
+      "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+      "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713"
+    }
+  },
+  "targets": [
+    "web",
+    "linux"
+  ],
+  "thumbnail": "thumbnail.png",
+  "timestamp_policy": "SOURCE_DATE_EPOCH or source commit time for reproducible packaging",
+  "title": "Embertrail",
+  "verification": {
+    "hash": "47d40b348709c397",
+    "outcome": "playing",
+    "purpose": "Campaign introduction: public run/jump inputs exercise momentum, platform collisions, collectibles, enemies and checkpoint progression.",
+    "ticks": 1000
+  }
+}

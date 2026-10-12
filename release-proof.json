@@ -1,0 +1,76 @@
+{
+  "package_id": "15e48df5eb17ff5adb6ff12d3f84e5775ea1ab60c176785989331addbd9be5d2",
+  "source_retrieval": {
+    "ok": true,
+    "method": "isolated anonymous exact-commit git fetch",
+    "sources": [
+      {
+        "role": "engine",
+        "clean": true,
+        "dirty_paths": [],
+        "path": ".",
+        "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+        "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+        "retrieved": true
+      },
+      {
+        "role": "game",
+        "clean": true,
+        "dirty_paths": [],
+        "path": "games/embertrail",
+        "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+        "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+        "retrieved": true
+      }
+    ],
+    "clean_reproduction": {
+      "ok": true,
+      "source_retrieval": {
+        "ok": true,
+        "method": "isolated anonymous exact-commit git fetch",
+        "sources": [
+          {
+            "role": "engine",
+            "clean": true,
+            "dirty_paths": [],
+            "path": ".",
+            "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+            "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+            "retrieved": true
+          },
+          {
+            "role": "game",
+            "clean": true,
+            "dirty_paths": [],
+            "path": "games/embertrail",
+            "repository": "https://github.com/kevstermcgee/BlueEngine.git",
+            "revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+            "retrieved": true
+          }
+        ]
+      },
+      "engine_revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+      "game_revision": "3cedac37054e0eabddd45b6883c9f9cc85bcf713",
+      "package_id": "15e48df5eb17ff5adb6ff12d3f84e5775ea1ab60c176785989331addbd9be5d2",
+      "compared_fields": [
+        "package_id",
+        "engine_revision",
+        "game_revision",
+        "game_source_sha256",
+        "sources",
+        "verification",
+        "file_sha256",
+        "compatibility",
+        "controls",
+        "required_capabilities",
+        "built_at_epoch",
+        "reproduce",
+        "browser_verification"
+      ],
+      "differences": {},
+      "empty_target": true,
+      "checkout": "anonymous exact commit, no local Git objects or working files",
+      "dependency_archives": "Cargo cache allowed; all binaries compiled afresh"
+    }
+  }
+}

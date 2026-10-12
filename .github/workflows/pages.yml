@@ -1,0 +1,44 @@
+name: Publish Embertrail
+on:
+  push:
+    branches: [main]
+    paths: [public/**, .github/workflows/pages.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: embertrail-pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Verify the reproduced runtime package
+        run: |
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          root = Path('public')
+          manifest = json.loads((root / 'manifest.json').read_text())
+          assert manifest['id'] == 'embertrail'
+          assert all(manifest['reproducibility'][key] for key in ('clean_checkout', 'empty_target', 'package_hashes_match'))
+          for name, expected in manifest['file_sha256'].items():
+              path = root / name
+              assert not path.is_symlink() and path.is_file(), name
+              assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, name
+          actual = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
+          assert actual == set(manifest['file_sha256']) | {'manifest.json'}
+          print('Verified package', manifest['package_id'])
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4
