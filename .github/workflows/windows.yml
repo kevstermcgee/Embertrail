@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: kevstermcgee/BlueEngine
-          ref: 045b10e4d5852cd2477522bd1ebec9ac59e5a953
+          ref: 5197c465ee734b1d79243b4905f3b49a5c745c8e
           path: engine
       - uses: dtolnay/rust-toolchain@stable
         with:

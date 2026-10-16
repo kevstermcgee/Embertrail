@@ -1,12 +1,12 @@
 # Embertrail
 
-A little light. A very big adventure. Embertrail 0.2.1 is an original, controller-first platforming adventure built with BlueEngine.
+A little light. A very big adventure. Embertrail 0.2.2 is an original, controller-first platforming adventure built with BlueEngine.
 
-[Download Embertrail 0.2.1 for Windows x64](https://github.com/kevstermcgee/Embertrail/releases/download/v0.2.1/embertrail-setup-windows-x64.exe) · [All releases](https://github.com/kevstermcgee/Embertrail/releases) · [BlueEngineGames](https://kevstermcgee.github.io/BlueEngineGames/)
+[Download Embertrail 0.2.2 for Windows x64](https://github.com/kevstermcgee/Embertrail/releases/download/v0.2.2/embertrail-setup-windows-x64.exe) · [All releases](https://github.com/kevstermcgee/Embertrail/releases) · [BlueEngineGames](https://kevstermcgee.github.io/BlueEngineGames/)
 
 Vesper, the Bell Regent, stole the Dawnheart that warms Mote's village. Cross 32 authored courses in eight worlds, free their bound guardians, ring eight dawn bells, and bring the Dawnheart home. Characters greet Mote automatically, without dialogue choices.
 
-This update tightens ground and air braking while preserving the full running jump, replaces repeated underground rooms with 32 regional routes, and keeps text inside readable panels. Thirty-four original interaction sounds give objects and actions their own feedback. Enemy graphics prepare before play, and a bounded course music cache removes full-track decoding from active platforming. Eight story-bound bosses and sixteen named compositions accompany the journey.
+This update fixes moving platforms pushing Mote into stationary terrain, adds a short animated stair trip with a warm camera fade, and gives the five guardian/Vesper compositions subtle rhythmic intensity. Battle music begins when the boss appears, stays through the encounter and returns to the world theme after defeat. The 32 regional underground routes, responsive movement, readable panels, 34 interaction recordings and sixteen named compositions remain available.
 
 | Controller | Keyboard | Action |
 | --- | --- | --- |
@@ -21,8 +21,8 @@ This update tightens ground and air braking while preserving the full running ju
 
 The pause menu includes checkpoint and course restarts, music and sound controls, the trail atlas, an optional Controls page, return to title, and Quit game. The game has no permanent controls strip. Choose **Download this song** to save the named track currently playing as an exact WAV in **Downloads / Embertrail Soundtrack**. Title options also offer its song download. Progress saves automatically.
 
-Run the installer to install the native game, soundtrack, and Start Menu shortcut; a desktop shortcut is optional. Saves and settings stay in `%LOCALAPPDATA%\BlueEngine` through upgrades and uninstall. Version 2 campaign and surface discoveries migrate to version 3; a save inside a replaced underground room resumes at its new entrance. Version 1 campaign discoveries are retained while the loaded course restarts at its entrance.
+Run the installer to install the native game, soundtrack, and Start Menu shortcut; a desktop shortcut is optional. Saves and settings stay in `%LOCALAPPDATA%\BlueEngine` through upgrades and uninstall. Version 4 retains version 3 course and campaign progress, repairs positions affected by the old moving-platform overlap and resumes stair travel exactly. Earlier campaign discoveries migrate through the same engine-owned save contract.
 
-[Exact game source and development guide](https://github.com/kevstermcgee/BlueEngine/tree/045b10e4d5852cd2477522bd1ebec9ac59e5a953/games/embertrail).
+[Exact game source and development guide](https://github.com/kevstermcgee/BlueEngine/tree/5197c465ee734b1d79243b4905f3b49a5c745c8e/games/embertrail).
 
-The [verified Windows build](https://github.com/kevstermcgee/BlueEngine/actions/runs/38845576717) passed rule and snapshot tests, code checks, score validation, executable resources, shortcut and icon checks, isolated graphical launch, and installation, upgrade, and save-preserving uninstall. `native-release-proof.json` records the exact source, installer checksum, and all runtime file hashes. Distribution uses the native Windows installer EXE.
+The [verified Windows build](https://github.com/kevstermcgee/BlueEngine/actions/runs/38903845390) passed rule and snapshot tests, code checks, score validation, executable resources, shortcut and icon checks, isolated graphical launch, and installation, upgrade, and save-preserving uninstall. `native-release-proof.json` records the exact source, installer checksum, and all runtime file hashes. Distribution uses the native Windows installer EXE.
