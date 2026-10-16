@@ -1,13 +1,28 @@
 # Embertrail
 
-An original 32-course platforming adventure built with BlueEngine. Guide Mote, a lantern spirit, through eight worlds to recover the dawn.
+A little light. A very big adventure. Embertrail 0.2.0 is an original, controller-first platforming adventure built with BlueEngine.
 
-[Download Embertrail for Windows x64](https://github.com/kevstermcgee/Embertrail/releases/latest/download/embertrail-setup-windows-x64.exe)
+[Download Embertrail 0.2.0 for Windows x64](https://github.com/kevstermcgee/Embertrail/releases/download/v0.2.0/embertrail-setup-windows-x64.exe) · [All releases](https://github.com/kevstermcgee/Embertrail/releases) · [BlueEngineGames](https://kevstermcgee.github.io/BlueEngineGames/)
 
-Run the installer EXE to install the native game, original music and Start Menu shortcut. A desktop shortcut is optional. No browser or WASM runtime is used. Progress and settings remain in `%LOCALAPPDATA%\BlueEngine` through upgrades and uninstall.
+Vesper, the Bell Regent, stole the Dawnheart that warms Mote's village. Cross 32 authored courses in eight worlds, free their bound guardians, ring eight dawn bells, and bring the Dawnheart home. Characters greet Mote automatically, without dialogue choices.
 
-Move with arrows or WASD, jump with Space or Up, and run with Shift. Hold Up for higher jumps. Esc pauses; K/L save and load. Standard controllers are supported.
+This update adds eight different boss battles, polished original pixel art, clearer hollow-root stairways, and sixteen named compositions for the worlds, secrets, guardians, and homecoming. One consistent jump, forgiving ledge takeoffs, buffered landings, and responsive movement support the journey's growing difficulty.
 
-[Game source and development guide](https://github.com/kevstermcgee/BlueEngine/tree/game/embertrail/games/embertrail). All characters, artwork, music and levels are original.
+| Controller | Keyboard | Action |
+| --- | --- | --- |
+| Left stick / D-pad | A/D or Left/Right | Move |
+| A / bottom face button | Space | Jump |
+| X / left face button | X | Cast with the Ember Lantern |
+| RT / right bumper | Shift | Run |
+| Down | S / Down | Duck, brake, enter or leave a root grotto |
+| Menu / Start | Esc | Pause or open title options |
+| Y / View | Tab | Trail atlas |
+| Stick / D-pad, A, B | Arrows, Enter, Esc | Navigate, confirm, go back |
 
-The Windows workflow retrieves pinned public source, runs rule tests and code checks, validates the score, checks executable resources and shortcut/window icons, launches the native game, captures an isolated declared-file package, and tests installation, upgrade and save-preserving uninstall. The browser deployment has been retired. Each release contains the verified Windows installer and records its SHA256 checksum.
+The pause menu includes checkpoint and course restarts, music and sound controls, the trail atlas, return to title, and Quit game. Choose **Download this song** to save the named track currently playing as an exact WAV in **Downloads / Embertrail Soundtrack**. Title options also offer its song download. Progress saves automatically.
+
+Run the installer to install the native game, soundtrack, and Start Menu shortcut; a desktop shortcut is optional. Saves and settings stay in `%LOCALAPPDATA%\BlueEngine` through upgrades and uninstall. Older campaign discoveries migrate to the new save format; the current course restarts at its entrance because its geometry and movement have changed.
+
+[Exact game source and development guide](https://github.com/kevstermcgee/BlueEngine/tree/051aee8117835d0075278d63f3deef92c7fc056c/games/embertrail).
+
+The [verified Windows build](https://github.com/kevstermcgee/BlueEngine/actions/runs/38838535413) passed rule and snapshot tests, code checks, score validation, executable resources, shortcut and icon checks, isolated graphical launch, and installation, upgrade, and save-preserving uninstall. `native-release-proof.json` records the exact source, installer checksum, and all runtime file hashes. Distribution uses the native Windows installer EXE.
