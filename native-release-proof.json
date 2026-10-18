@@ -1,22 +1,23 @@
 {
   "schema_version": 1,
   "name": "Embertrail",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "distribution": "native-windows-x64-installer",
   "wasm": false,
   "source_repository": "https://github.com/kevstermcgee/BlueEngine",
-  "source_revision": "5197c465ee734b1d79243b4905f3b49a5c745c8e",
+  "source_revision": "8ab26c4b39cd9818e6001ae10b5f116a0f36d28d",
   "source_game_path": "games/embertrail",
   "build_repository": "https://github.com/kevstermcgee/BlueEngine",
-  "build_run": "https://github.com/kevstermcgee/BlueEngine/actions/runs/38903845390",
-  "build_run_id": 38903845390,
-  "build_commit": "5197c465ee734b1d79243b4905f3b49a5c745c8e",
+  "build_run": "https://github.com/kevstermcgee/BlueEngine/actions/runs/39100795335",
+  "build_run_id": 39100795335,
+  "build_commit": "8ab26c4b39cd9818e6001ae10b5f116a0f36d28d",
   "build_status": "success",
   "build_artifact": "embertrail-windows-x64",
+  "build_artifact_sha256": "7f5800f440166b065e55055a11a7ba6b2a0d5c21ce48bae5284abcb66d4c8929",
   "installer_file": "embertrail-setup-windows-x64.exe",
-  "installer_bytes": 168694987,
-  "installer_sha256": "534f1a4a934ce211f486f1fd499230939a2b98006423f67ed42e3e1f827c134b",
-  "native_exe_sha256": "58f29debcfd585bede8cf9090cb21f40abb3d8201c612a13ae13853dd111393b",
+  "installer_bytes": 168802632,
+  "installer_sha256": "0444a05531313dfa95b3cfccc4f51eb804a42c3022ba4337601eebcf8c08021e",
+  "native_exe_sha256": "715a14416101a9fdf5419425d98ebeb6afe5144edd25ffa078e2e1fd05bb0a33",
   "runtime_files": {
     "assets/audio/score/README.md": "ba436485230c2cfce6b4431db47437f632c3b14af50b7115fe73f944427cca54",
     "assets/audio/score/citadel/bank.json": "39c7d3f171f6777f6cd6d1ab1b189733075301ea309d38f97f71a24fb35d57ab",
@@ -106,14 +107,14 @@
     "assets/audio/sfx/spring-2.wav": "53d0b64e2965c3bea4e372c1267a3def7ee5dd7dd9fe6957c9db1ae04ce5982a",
     "assets/fonts/DejaVu-LICENSE.txt": "e81d9dced49fea2a7d576cbea283873de58563c5d488f954deb282843c3ea79c",
     "assets/fonts/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
-    "embertrail.exe": "58f29debcfd585bede8cf9090cb21f40abb3d8201c612a13ae13853dd111393b",
+    "embertrail.exe": "715a14416101a9fdf5419425d98ebeb6afe5144edd25ffa078e2e1fd05bb0a33",
     "embertrail.ico": "6fced86ae69cadd812d0c0763f6c656c00982991b1a19929be599c05e9cbc1bf",
     "embertrail.png": "d30e5e1de8e5dd153374f148e3958911960291462f83672ddc1f50eaa2802a07"
   },
   "package": {
-    "packaged_at": "2026-10-16T12:58:48Z",
-    "source_revision_prefix": "5197c465ee73",
-    "verified_at": "2026-10-16T13:00:48Z",
+    "packaged_at": "2026-10-18T05:34:31Z",
+    "source_revision_prefix": "8ab26c4b39cd",
+    "verified_at": "2026-10-18T05:36:20Z",
     "runtime_file_count": 91
   },
   "checks": {
@@ -127,34 +128,62 @@
     "native_x64_gui": true,
     "c_runtime_linked_into_game": true,
     "installation_upgrade_uninstall_and_save_retention": true,
-    "all_runtime_hashes_and_installer_checksum": true
+    "all_runtime_hashes_and_installer_checksum": true,
+    "fullscreen_default_and_studio_card": true,
+    "first_F11_toggle_windowed_and_back": true,
+    "explicit_windowed_startup": true
   },
-  "engine_verification": {
-    "repository": "https://github.com/kevstermcgee/BlueEngine",
-    "checked_revision": "26973175f505b5eba928cb1f8e25c565dd42e4f6",
-    "run": "https://github.com/kevstermcgee/BlueEngine/actions/runs/38834707857",
-    "status": "completed",
-    "conclusion": "success",
-    "successful_jobs": 15,
-    "comparison_revision": "5197c465ee734b1d79243b4905f3b49a5c745c8e",
-    "engine_rust_cargo_and_build_inputs_unchanged": true
+  "windows_startup": {
+    "executable_sha256": "715a14416101a9fdf5419425d98ebeb6afe5144edd25ffa078e2e1fd05bb0a33",
+    "toggle_key": "F11",
+    "game_after_intro": {
+      "screenshot": "fullscreen-game.png",
+      "height": 768,
+      "left": 0,
+      "width": 1024,
+      "top": 0
+    },
+    "second_toggle_fullscreen": true,
+    "normal_fullscreen": true,
+    "studio_card": {
+      "screenshot": "fullscreen-studio-card.png",
+      "height": 768,
+      "left": 0,
+      "width": 1024,
+      "top": 0
+    },
+    "explicit_windowed_studio_card": {
+      "screenshot": "windowed-studio-card.png",
+      "height": 579,
+      "left": 48,
+      "width": 976,
+      "top": 104
+    },
+    "title": "Embertrail",
+    "first_toggle_windowed": {
+      "screenshot": "first-toggle-windowed.png",
+      "height": 768,
+      "left": 0,
+      "width": 1024,
+      "top": 0
+    },
+    "explicit_windowed_game": {
+      "screenshot": "windowed-game.png",
+      "height": 579,
+      "left": 48,
+      "width": 976,
+      "top": 104
+    },
+    "schema_version": 1,
+    "isolated_player_data": true
   },
-  "verification_scope": "Windows native package, software OpenGL graphical smoke, installation, upgrade, uninstall, and save/settings retention. This receipt does not claim physical controller or speaker testing.",
+  "current_game_tests": {
+    "simulation": 33,
+    "audio": 3,
+    "identity": 1
+  },
+  "verification_scope": "Native Windows package, real input and software OpenGL startup captures, installation, upgrade, uninstall and save/settings retention. No physical controller or speaker claim.",
   "browser_distribution": {
     "status": "retired"
-  },
-  "build_artifact_sha256": "8c4e756eb294669421323cd962262d31e9c002960eeb145d00ab91f88ff964d7",
-  "local_game_verification": {
-    "simulation_tests": 33,
-    "audio_tests": 3,
-    "identity_tests": 1,
-    "authored_blocked_platform_contacts": 795,
-    "stair_saved_steps_each_direction": 40,
-    "genuine_version3_migration_and_embedded_pose_recovery": true,
-    "isolated_main_course_replays": 32,
-    "isolated_grotto_reward_exit_replays": 32,
-    "native_keyboard_menu_checks": 8,
-    "native_real_boss_defeat_and_exact_current_wav_download": true,
-    "capture_scope": "Native Linux software OpenGL and ALSA null sink; public Intent replay is separate from explicitly staged stair fixtures. No physical controller or speaker claim."
   }
 }
