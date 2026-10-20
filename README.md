@@ -1,10 +1,10 @@
 # Embertrail
 
-A little light. A very big adventure. Embertrail 0.2.3 is an original, controller-first platforming adventure built with BlueEngine.
+A little light. A very big adventure. Embertrail 0.2.4 is an original, controller-first platforming adventure built with BlueEngine.
 
-[Download Embertrail 0.2.3 for Windows x64](https://github.com/kevstermcgee/Embertrail/releases/download/v0.2.3/embertrail-setup-windows-x64.exe) · [All releases](https://github.com/kevstermcgee/Embertrail/releases) · [BlueEngineGames](https://kevstermcgee.github.io/BlueEngineGames/)
+[Download Embertrail 0.2.4 for Windows x64](https://github.com/kevstermcgee/Embertrail/releases/download/v0.2.4/embertrail-setup-windows-x64.exe) · [All releases](https://github.com/kevstermcgee/Embertrail/releases) · [BlueEngineGames](https://kevstermcgee.github.io/BlueEngineGames/)
 
-The game opens fullscreen with a brief **BlueEngine Games** studio card before its own title menu. Press a key, click, or use a controller button to skip; release the control before playing. F or F11 switches fullscreen, and `--windowed` starts a windowed session. Saves and game rules are preserved.
+The game opens fullscreen with a brief, text-only **BlueEngine Games** studio card before its own title menu. Press a key, click, or use a controller button to skip; release the control before playing. F or F11 switches fullscreen, and `--windowed` starts a windowed session. Saves and game rules are preserved.
 
 Vesper, the Bell Regent, stole the Dawnheart that warms Mote's village. Cross 32 authored courses in eight worlds, free their bound guardians, ring eight dawn bells, and bring the Dawnheart home. Characters greet Mote automatically, without dialogue choices.
 
@@ -25,6 +25,6 @@ The pause menu includes checkpoint and course restarts, music and sound controls
 
 Run the installer to install the native game, soundtrack, and Start Menu shortcut; a desktop shortcut is optional. Saves and settings stay in `%LOCALAPPDATA%\BlueEngine` through upgrades and uninstall. Version 4 retains version 3 course and campaign progress, repairs positions affected by the old moving-platform overlap and resumes stair travel exactly. Earlier campaign discoveries migrate through the same engine-owned save contract.
 
-[Exact game source and development guide](https://github.com/kevstermcgee/BlueEngine/tree/8ab26c4b39cd9818e6001ae10b5f116a0f36d28d/games/embertrail).
+[Exact game source and development guide](https://github.com/kevstermcgee/BlueEngine/tree/9c72da451c1926b85593ebbfc2e0623698fbea26/games/embertrail).
 
-The [verified Windows build](https://github.com/kevstermcgee/BlueEngine/actions/runs/39100795335) passed rule and snapshot tests, code checks, score validation, executable resources, shortcut and icon checks, isolated graphical launch, and installation, upgrade, and save-preserving uninstall. It also captured the real studio card and verified fullscreen, its first toggle to a window and back, and the explicit windowed override using isolated player data. `native-release-proof.json` records the exact source, installer checksum, and all runtime file hashes. Distribution uses the native Windows installer EXE.
+The [verified Windows build](https://github.com/kevstermcgee/Embertrail/actions/runs/39442081285) passed rule and snapshot tests, code checks, score validation, executable resources, shortcut and icon checks, isolated graphical launch, and installation, upgrade, and save-preserving uninstall. It also captured the text-only studio card and verified fullscreen, its first toggle to a window and back, and the explicit windowed override using isolated player data. `native-release-proof.json` records the exact source, installer checksum, and all runtime file hashes. Distribution uses the native Windows installer EXE.
