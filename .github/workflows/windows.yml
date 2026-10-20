@@ -48,7 +48,7 @@ jobs:
           cargo fmt --manifest-path games/embertrail/Cargo.toml --check
           cargo test --locked --manifest-path games/embertrail/Cargo.toml
           cargo clippy --locked --all-targets --manifest-path games/embertrail/Cargo.toml -- -D warnings
-          cargo build --locked --profile itest --no-default-features --bin be2-tools
+          cargo build --locked --profile itest --no-default-features --features physics,networking --bin be2-tools
       - name: Prepare pinned software OpenGL for Windows verification
         shell: pwsh
         run: |
